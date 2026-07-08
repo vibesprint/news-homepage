@@ -127,9 +127,15 @@ main {
 
 #links-menu {
   display: none;
+  @include fonts.text-preset-6;
+  color: colors.$navy-600;
 }
 
 @media (min-width: 1200px) {
+  body {
+    padding-top: var(--sp-800);
+  }
+
   #links-menu {
     display: block;
   }
@@ -173,6 +179,11 @@ main {
       margin-top: 0;
     }
 
+  }
+
+  #article-list {
+    flex-direction: row;
+    gap: var(--sp-500);
   }
 
 }
