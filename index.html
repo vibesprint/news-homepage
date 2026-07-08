@@ -12,45 +12,49 @@
 </head>
 <body>
 
-<main >
-
 <header >
     <nav class="nav-header-component" >
-        <img src="./assets/images/logo.svg" alt="Logo" />
-        <img id="hamburger-menu" src="./assets/images/icon-menu.svg" alt="Show Menu" />
+        <img src="./assets/images/logo.svg" alt="" />
+        <button id="hamburger-menu" aria-label="Open Menu" aria-expanded="false" aria-controls="navigation-menu" >
+        <img src="./assets/images/icon-menu.svg" alt="" />
+        </button>
 
 
     <div id="navigation-menu" class="menu-component" >
     <div class="menu-content" >
-        <img class="heading" src="./assets/images/icon-menu-close.svg" alt="Close menu" />
+        <button aria-label="Close menu" class="heading" >
+        <img  src="./assets/images/icon-menu-close.svg" alt="" />
+        </button>
+
         <div class="items" >
-        <a >Home</a>
-        <a >New</a>
-        <a >Popular</a>
-        <a >Trending</a>
-        <a >Categories</a>
+        <a href="#" >Home</a>
+        <a href="#" >New</a>
+        <a href="#" >Popular</a>
+        <a href="#" >Trending</a>
+        <a href="#" >Categories</a>
         </div>
     </div>
     </div>
 
     <div id="links-menu" >
         <div class="nav-links-component" >
-        <a >Home</a>
-        <a >New</a>
-        <a >Popular</a>
-        <a >Trending</a>
-        <a >Categories</a>
+        <a href="#" >Home</a>
+        <a href="#" >New</a>
+        <a href="#" >Popular</a>
+        <a href="#" >Trending</a>
+        <a href="#" >Categories</a>
     </div>
         </div>
 
     </nav>
 </header>
 
+<main >
 <div id="hero-region" >
     <article id="hero-section" >
         <picture >
             <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 1200px)" />
-            <img src="./assets/images/image-web-3-mobile.jpg" />
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="A web 3 illustrative image" />
         </picture>
 
     <div class="hero-body" >
@@ -70,55 +74,55 @@
     </article >
 
     <article id="article-card" class="article-card-component" >
-        <h1 >New </h1>
+        <h2 class="card-heading" >New </h2>
 
-<section class="article-list" >
+<div class="article-list" >
     <div class="article-item" >
-        <h2 >Hydrogen VS Electric Cars</h2>
+        <a href="#" >Hydrogen VS Electric Cars</a>
         <p >Will hydrogen-fueled cars ever catch up to EVs?</p>
     </div>
 
     <div class="article-item" >
-        <h2 > The Downsides of AI Artistry</h2>
+        <a href="#" > The Downsides of AI Artistry</a>
         <p >What are the possible adverse effects of on-demand AI image generation?</p>
     </div>
 
     <div class="article-item" >
-        <h2 >Is VC Funding Drying Up?</h2>
+        <a href="#" >Is VC Funding Drying Up?</a>
         <p >Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
     </div>
-</section>
+</div>
     </article >
 </div>
 
     <article id="article-list" >
-<section class="article-component" >
+<div class="article-component" >
   <img class="image" src="./assets/images/image-retro-pcs.jpg" alt="" />
   <div class="text-content" >
-      <h2 class="number" >01</h2>
-      <h3 class="heading" >Reviving Retro PCs</h3>
+      <p class="number" >01</p>
+      <a href="#" class="heading" >Reviving Retro PCs</a>
       <p class="body" >What happens when old PCs are given modern upgrades?</p>
   </div>
-    </section>
+    </div>
 
-<section class="article-component" >
+<div class="article-component" >
   <img class="image" src="./assets/images/image-top-laptops.jpg" alt="" />
   <div class="text-content" >
-      <h2 class="number" >02</h2>
-      <h3 class="heading" >Top 10 Laptops of 2022</h3>
+      <p class="number" >02</p>
+      <a href="#" class="heading" >Top 10 Laptops of 2022</a>
       <p class="body" >Our best picks for various needs and budgets.</p>
   </div>
-</section>
+</div>
 
-<section class="article-component" >
+<div class="article-component" >
   <img class="image" src="./assets/images/image-gaming-growth.jpg" alt="" />
   <div class="text-content" >
-      <h2 class="number" >03</h2>
-      <h3 class="heading" >The Growth of Gaming</h3>
+      <p class="number" >03</p>
+      <a href="#" class="heading" >The Growth of Gaming</a>
       <p class="body" >How the pandemic has sparked fresh opportunities.</p>
 
   </div>
-</section >
+</div >
 
     </article >
 

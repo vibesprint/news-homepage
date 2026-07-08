@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+a {
+  all: unset;
+}
+
 body {
   padding: var(--sp-100);
 }

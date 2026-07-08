@@ -7,9 +7,8 @@
   width: 40px;
   height: 17px;
 
-  &:hover {
-    cursor: pointer;
-  }
+  border: none;
+
 }
 
 main {
@@ -35,12 +34,17 @@ main {
   min-width: 75%;
   box-sizing: border-box;
   transition: right 0.3s ease;
+  visibility: hidden;
 
   &.open {
     right: 0%;
   }
 
   .menu-content {
+    button.heading {
+      border: none;
+    }
+
     .items {
       @include fonts.text-preset-5;
       font-weight: 400;
@@ -87,13 +91,13 @@ main {
   background-color: colors.$navy-950;
   margin-top: var(--sp-800);
 
-  > h1 {
+  > .card-heading {
     @include fonts.text-preset-3;
     color: colors.$gold-400;
   }
 
   .article-item {
-    h2 {
+    a {
       color: colors.$white;
       @include fonts.text-preset-4;
 
