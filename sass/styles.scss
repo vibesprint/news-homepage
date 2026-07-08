@@ -10,6 +10,9 @@
 
 main {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-400);
 }
 
 #navigation-menu.menu-component {
@@ -26,5 +29,33 @@ main {
       @include fonts.text-preset-5;
       font-weight: 400;
     }
+  }
+}
+
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-300);
+
+  picture img {
+    max-width: 100%;
+  }
+
+  .heading {
+    @include fonts.text-preset-2;
+    color: colors.$navy-950;
+  }
+
+  .body {
+    @include fonts.text-preset-6;
+    color: colors.$navy-600;
+  }
+
+  button {
+    @include fonts.text-preset-7;
+    color: colors.$navy-950;
+    background-color: colors.$red-500;
+
+    align-self: flex-start;
   }
 }
