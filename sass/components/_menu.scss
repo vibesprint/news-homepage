@@ -8,11 +8,12 @@
 
   .menu-content {
     display: flex;
+    flex-direction: column;
     gap: 88px;
-    max-width: 196px;
+    min-width: 196px;
 
     .heading {
-      justify-self: flex-end;
+      align-self: flex-end;
     }
 
     .items {
