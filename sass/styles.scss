@@ -11,7 +11,7 @@
 
 }
 
-main {
+#main {
   min-height: 100vh;
 }
 
@@ -20,7 +20,7 @@ main {
     display: flex;
     justify-content: center;
   }
-  main {
+  #main {
     max-width: 80%;
   }
 }
@@ -48,6 +48,10 @@ main {
     .items {
       @include fonts.text-preset-5;
       font-weight: 400;
+
+      > *:hover {
+        cursor: pointer;
+      }
     }
   }
 }
