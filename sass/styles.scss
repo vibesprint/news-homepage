@@ -10,9 +10,6 @@
 
 main {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-400);
 }
 
 #navigation-menu.menu-component {
@@ -36,6 +33,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--sp-300);
+  margin-top: var(--sp-400);
 
   picture img {
     max-width: 100%;
@@ -57,5 +55,27 @@ main {
     background-color: colors.$red-500;
 
     align-self: flex-start;
+  }
+}
+
+#article-card {
+  background-color: colors.$navy-950;
+  margin-top: var(--sp-800);
+
+  > h1 {
+    @include fonts.text-preset-3;
+    color: colors.$gold-400;
+  }
+
+  .article-item {
+    h2 {
+      color: colors.$white;
+      @include fonts.text-preset-4;
+    }
+
+    p {
+      @include fonts.text-preset-6;
+      color: colors.$grey-300;
+    }
   }
 }
