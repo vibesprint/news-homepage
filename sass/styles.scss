@@ -79,3 +79,29 @@ main {
     }
   }
 }
+
+#article-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-400);
+  margin-top: var(--sp-800);
+
+  .article-component {
+    .text-content {
+      .number {
+        @include fonts.text-preset-3;
+        color: colors.$red-500;
+      }
+
+      .heading {
+        @include fonts.text-preset-5;
+        color: colors.$navy-950;
+      }
+
+      .body {
+        @include fonts.text-preset-6;
+        color: colors.$navy-600;
+      }
+    }
+  }
+}
