@@ -16,6 +16,16 @@ main {
   min-height: 100vh;
 }
 
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    max-width: 80%;
+  }
+}
+
 #navigation-menu.menu-component {
   position: fixed;
   min-height: 100vh;
