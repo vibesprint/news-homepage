@@ -2,3 +2,11 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  padding: var(--sp-100);
+}
+
+[hidden] {
+  display: none !important;
+}

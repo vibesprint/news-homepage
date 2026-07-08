@@ -5,31 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles/styles.css" >
+
   <title>Frontend Mentor | News homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
+<main >
+
+<header >
+    <nav class="nav-header-component" >
+        <img src="./assets/images/logo.svg" alt="Logo" />
+        <img id="hamburger-menu" src="./assets/images/icon-menu.svg" alt="Show Menu" />
+
+
+    <div class="nav-links-component" hidden >
   Home
   New
   Popular
   Trending
   Categories
+    </div>
 
+    </nav>
+</header>
+
+    <div hidden >
   The Bright Future of Web 3.0?
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
   But is it really fulfilling its promise?
 
   Read more
 
-  New 
+  New
 
   Hydrogen VS Electric Cars
   Will hydrogen-fueled cars ever catch up to EVs?
@@ -51,10 +61,9 @@
   03
   The Growth of Gaming
   How the pandemic has sparked fresh opportunities.
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+
+    </div>
+
+</main>
 </body>
 </html>
