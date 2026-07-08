@@ -1,0 +1,24 @@
+@use '../spacings';
+
+.menu-component {
+  padding: 27px 36px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .menu-content {
+    display: flex;
+    gap: 88px;
+    max-width: 196px;
+
+    .heading {
+      justify-self: flex-end;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-300);
+    }
+  }
+}

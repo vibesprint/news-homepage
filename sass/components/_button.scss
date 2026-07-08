@@ -1,0 +1,5 @@
+@use '../spacings';
+
+.button-component {
+  padding: var(--sp-100) var(--sp-400);
+}

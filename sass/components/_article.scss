@@ -1,0 +1,17 @@
+@use '../spacings';
+
+.article-component {
+  display: flex;
+  gap: var(--sp-300);
+
+  > .image {
+    width: 100px;
+    height: 129px;
+  }
+
+  > .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-100);
+  }
+}

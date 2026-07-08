@@ -1,0 +1,14 @@
+@use '../spacings';
+
+.article-card-component {
+  padding: calc(var(--sp-100) * 2) var(--sp-300);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-400);
+
+  > .article-list {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--sp-400) * 2);
+  }
+}

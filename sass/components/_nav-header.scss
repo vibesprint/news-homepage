@@ -1,0 +1,13 @@
+@use '../spacings';
+
+.nav-header-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links-component {
+  display: flex;
+  gap: var(--sp-500);
+  align-items: center;
+}
