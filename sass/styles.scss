@@ -74,6 +74,12 @@ main {
     background-color: colors.$red-500;
 
     align-self: flex-start;
+
+    &:hover, &:focus {
+      color: colors.$white;
+      background-color: colors.$navy-950;
+      cursor: pointer;
+    }
   }
 }
 
@@ -90,6 +96,11 @@ main {
     h2 {
       color: colors.$white;
       @include fonts.text-preset-4;
+
+      &:hover, &:focus {
+        color: colors.$gold-400;
+        cursor: pointer;
+      }
     }
 
     p {
@@ -115,6 +126,11 @@ main {
       .heading {
         @include fonts.text-preset-5;
         color: colors.$navy-950;
+
+        &:hover, &:focus {
+          color: colors.$red-500;
+          cursor: pointer;
+        }
       }
 
       .body {
@@ -129,6 +145,11 @@ main {
   display: none;
   @include fonts.text-preset-6;
   color: colors.$navy-600;
+
+  .nav-links-component > *:hover {
+    color: colors.$red-500;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 1200px) {
