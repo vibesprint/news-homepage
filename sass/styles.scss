@@ -6,6 +6,10 @@
 #hamburger-menu {
   width: 40px;
   height: 17px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 main {
@@ -16,10 +20,15 @@ main {
   position: fixed;
   min-height: 100vh;
   top: 0%;
-  right: 0%;
+  right: -75%;
   background-color: colors.$white;
   min-width: 75%;
   box-sizing: border-box;
+  transition: right 0.3s ease;
+
+  &.open {
+    right: 0%;
+  }
 
   .menu-content {
     .items {
