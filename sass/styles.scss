@@ -124,3 +124,55 @@ main {
     }
   }
 }
+
+#links-menu {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  #links-menu {
+    display: block;
+  }
+
+  #navigation-menu, #hamburger-menu {
+    display: none;
+  }
+
+  #hero-region {
+    display: flex;
+    gap: var(--sp-400);
+    margin-top: var(--sp-800);
+
+    #hero-section {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-300);
+      margin-top: 0;
+
+
+      .hero-body {
+        display: flex;
+        gap: var(--sp-400);
+
+        .heading {
+          @include fonts.text-preset-1;
+          color: colors.$navy-950;
+        }
+
+        .hero-text {
+          display: flex;
+          flex-direction: column;
+          gap: var(--sp-400);
+        }
+
+      }
+
+    }
+
+    #article-card {
+      margin-top: 0;
+    }
+
+  }
+
+}
